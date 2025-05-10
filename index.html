@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+  <main class="container">
+    <form id="contactForm" novalidate>
+      <h1>Contact Us</h1>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" aria-required="true" aria-describedby="firstNameError">
+          <p id="firstNameError" class="error-message" role="alert">This field is required</p>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" aria-required="true" aria-describedby="lastNameError">
+          <p id="lastNameError" class="error-message" role="alert">This field is required</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" aria-required="true" aria-describedby="emailError">
+        <p id="emailError" class="error-message" role="alert">This field is required</p>
+      </div>
+
+      <div class="form-group">
+        <label for="queryType">Query Type</label>
+        <select id="queryType" name="queryType" aria-required="true" aria-describedby="queryTypeError">
+          <option value="" disabled selected>Select a query type</option>
+          <option value="general">General Enquiry</option>
+          <option value="support">Support Request</option>
+        </select>
+        <p id="queryTypeError" class="error-message" role="alert">Please select a query type</p>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" aria-required="true" aria-describedby="messageError"></textarea>
+        <p id="messageError" class="error-message" role="alert">This field is required</p>
+      </div>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="consent" name="consent" aria-required="true" aria-describedby="consentError">
+        <label for="consent">I consent to being contacted by the team</label>
+        <p id="consentError" class="error-message" role="alert">To submit this form, please consent to being contacted</p>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="successMessage" class="success-message" role="alert" aria-live="assertive">
+      <h2>Message Sent!</h2>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </main>
+
+  <!-- Hidden elements for screen reader announcements -->
+  <div aria-live="assertive" class="sr-only" id="errorAnnouncement"></div>
+  <div aria-live="assertive" class="sr-only" id="successAnnouncement"></div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Ayokanmi Adejola</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

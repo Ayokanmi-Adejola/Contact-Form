@@ -1,0 +1,202 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  /* Primary Colors */
+  --green-200: hsl(148, 38%, 91%);
+  --green-600: hsl(169, 82%, 27%);
+  --red: hsl(0, 66%, 54%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --grey-500: hsl(186, 15%, 59%);
+  --grey-900: hsl(187, 24%, 22%);
+
+  /* Font */
+  --font-family: 'Karla', sans-serif;
+  --font-size-label: 16px;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--green-200);
+  color: var(--grey-900);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--grey-900);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+label {
+  display: block;
+  font-size: var(--font-size-label);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--grey-500);
+  border-radius: 5px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--green-600);
+  box-shadow: 0 0 0 2px rgba(0, 128, 128, 0.1);
+}
+
+.error input,
+.error select,
+.error textarea {
+  border-color: var(--red);
+}
+
+.error-message {
+  color: var(--red);
+  font-size: 14px;
+  margin-top: 0.25rem;
+  display: none;
+}
+
+.error .error-message {
+  display: block;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox-group input {
+  width: auto;
+  margin-top: 0.25rem;
+}
+
+.checkbox-group label {
+  font-weight: 400;
+}
+
+button {
+  background-color: var(--green-600);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: hsl(169, 82%, 22%);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 128, 128, 0.3);
+}
+
+.success-message {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.success-message h2 {
+  color: var(--green-600);
+  margin-bottom: 1rem;
+}
+
+.success-message p {
+  margin-bottom: 1.5rem;
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Screen reader only class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  body {
+    padding: 4rem 2rem;
+  }
+
+  .container {
+    padding: 3rem;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .form-row .form-group {
+    flex: 1;
+  }
+}
