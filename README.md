@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository]()
-- Live Site URL: [Live Demo]()
+- Solution URL: [GitHub Repository](https://github.com/Ayokanmi-Adejola/Contact-Form)
+- Live Site URL: [Live Demo](https://ayokanmi-adejola.github.io/Contact-Form/)
 
 ## My process
 
@@ -121,4 +121,4 @@ In future projects, I would like to focus more on:
 ## Author
 
 - Website - [Ayokanmi Adejola](https://ayokanmi-adejola-portfolio.netlify.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Ayokanmi-Adejola)
+- Frontend Mentor - [@Ayokanmi-Adejola](https://www.frontendmentor.io/profile/Ayokanmi-Adejola)
