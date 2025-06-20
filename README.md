@@ -2,18 +2,7 @@
 
 This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
 
 ## Overview
 
@@ -33,11 +22,9 @@ Users should be able to:
 ### Screenshot
 
 ![](./design/desktop-preview.jpg)
+![](./design/mobile-design.jpg)
 
-### Links
 
-- Solution URL: [GitHub Repository](https://github.com/Ayokanmi-Adejola/Contact-Form)
-- Live Site URL: [Live Demo](https://ayokanmi-adejola.github.io/Contact-Form/)
 
 ## My process
 
@@ -120,5 +107,4 @@ In future projects, I would like to focus more on:
 
 ## Author
 
-- Website - [Ayokanmi Adejola](https://ayokanmi-adejola-portfolio.netlify.app/)
 - Frontend Mentor - [@Ayokanmi-Adejola](https://www.frontendmentor.io/profile/Ayokanmi-Adejola)
